@@ -37,6 +37,17 @@ section:nth-child(even){
 .btn{
     margin-top: 1rem;
     display: inline-block;
+    font-size: 1.7rem;
+    color: #fff;
+    background: var(--black);
+    border-radius: .5rem;
+    cursor: pointer;
+    padding: .8rem 3rem ;
+}
+.btn:hover{
+    color: var(--black);
+    background: #eee;
+    letter-spacing: .1rem;
 }
 
 /*HEADER INICIO*/
