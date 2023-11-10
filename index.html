@@ -1,26 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurante</title>
     <link rel="stylesheet" href="/css/styles.css">
 </head>
+
 <body>
-    <nav class="navbar">
-        <a href="#home"></a>
-        <a href="#dishes"></a>
-        <a href="#about"></a>
-        <a href="#menu"></a>
-        <a href="#review"></a>
-        <a href="#order"></a>
-    </nav>
+    <header>
+        <a href="#" class="logo"> <i class="fa-solid fa-utensils">Rukito.</i>
 
-    <div class="icons">
-        <i class="fas fa-bars" id="bars"></i>
-    </div>
+            <nav class="navbar">
+                <a class="active" href="#home">home</a>
+                <a href="#dishes">platos</a>
+                <a href="#about">sobre nosotros</a>
+                <a href="#menu">menu</a>
+                <a href="#review">review</a>
+                <a href="#order">ordenar</a>
+            </nav>
+
+            <div class="icons">
+                <i class="fas fa-bars" id="menu-bars"></i>
+                <i class="fas fa-search" id="search-icon"></i>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-shopping-cart"></a>
+            </div>
+    </header>
+
+    <!--END HEADER-->
 
 
-    <script src=""></script>
+
+    <!-- SEARCH FORM-->
+    <form action="" id="search-form">
+        <input type="search" placeholder="Search here..." name="" id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+        <i class="fas fa-times" id="close"></i>
+    </form>
+    <!--END SEARCH-->
+
+
+    <!-- HOME INICIO-->
+    <section class="home" id="home">
+        <div class="home-slider">
+
+            <div class="wrapper">
+
+                <div class="slide">
+                    <div class="content">
+                        <span>our special dish</span>
+                        <h3>spicy noodles</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam fuga modi qui sapiente eius
+                        atque dolorem animi impedit error perferendis quos, vel illum rerum delectus mollitia ea
+                        blanditiis in. Provident?</p>
+                        <a href="#" class="btn">Pide Ahora</a>
+                    </div>
+                    <div class="image">
+                        <img src="assets/image-home/plato1.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="content">
+                        <span>our special dish</span>
+                        <h3>spicy noodles</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam fuga modi qui sapiente eius
+                        atque dolorem animi impedit error perferendis quos, vel illum rerum delectus mollitia ea
+                        blanditiis in. Provident?</p>
+                        <a href="#" class="btn">Pide Ahora</a>
+                    </div>
+                    <div class="image">
+                        <img src="assets/image-home/plato2.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="content">
+                        <span>our special dish</span>
+                        <h3>spicy noodles</h3>
+                       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam fuga modi qui sapiente eius
+                        atque dolorem animi impedit error perferendis quos, vel illum rerum delectus mollitia ea
+                        blanditiis in. Provident?</p>
+                        <a href="#" class="btn">Pide Ahora</a>
+                    </div>
+                    <div class="image">
+                        <img src="assets/image-home/plato3.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- HOME FIN-->
+
+    <script src="https://kit.fontawesome.com/c47c09098f.js" crossorigin="anonymous"></script>
+    <script src="/js/script.js"></script>
 </body>
+
 </html>
