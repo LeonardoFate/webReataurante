@@ -25,29 +25,43 @@ html {
   scroll-behavior: smooth;
 }
 
-section{
-    padding: 2rem 9%;
-
+section {
+  padding: 2rem 9%;
 }
 
-section:nth-child(even){
-    background: #eee;
+section:nth-child(even) {
+  background: #eee;
 }
 
-.btn{
-    margin-top: 1rem;
-    display: inline-block;
-    font-size: 1.7rem;
-    color: #fff;
-    background: var(--black);
-    border-radius: .5rem;
-    cursor: pointer;
-    padding: .8rem 3rem ;
+.sub-heading {
+  text-align: center;
+  color: var(--green);
+  font-size: 2rem;
+  padding-top: 1rem;
 }
-.btn:hover{
-    color: var(--black);
-    background: #eee;
-    letter-spacing: .1rem;
+
+.heading {
+  text-align: center;
+  color: var(--black);
+  font-size: 3rem;
+  padding-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  font-size: 1.7rem;
+  color: #fff;
+  background: var(--black);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  padding: 0.8rem 3rem;
+}
+.btn:hover {
+  color: var(--black);
+  background: #eee;
+  letter-spacing: 0.1rem;
 }
 
 /*HEADER INICIO*/
@@ -127,8 +141,8 @@ header .icons #menu-bars {
   padding: 0 1rem;
 }
 
-#search-form.active{
-    top:0;
+#search-form.active {
+  top: 0;
 }
 
 #search-form #search-box {
@@ -154,61 +168,108 @@ header .icons #menu-bars {
   font-size: 3rem;
 }
 
-
-#search-form label:hover{
-    color: var(--green);
+#search-form label:hover {
+  color: var(--green);
 }
 
-#search-form  #close{
-    position: absolute;
-    color: #fff;
-    cursor:pointer;
-    top: 2rem; right: 3rem;
-    font-size: 5rem;
+#search-form #close {
+  position: absolute;
+  color: #fff;
+  cursor: pointer;
+  top: 2rem;
+  right: 3rem;
+  font-size: 5rem;
 }
 
 /*SEARCH FIN*/
 
 /*HOME INICIO*/
-.home .home-slider .slide{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 2rem;
-    padding-top: 9rem;
+.home .home-slider .slide {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding-top: 9rem;
 }
 
-.home .home-slider .slide .content{
-    flex: 1 1 45rem;
+.home .home-slider .slide .content {
+  flex: 1 1 45rem;
 }
 
-.home .home-slider .slide .image{
-    flex: 1 1 45rem;
+.home .home-slider .slide .image {
+  flex: 1 1 45rem;
 }
 
-.home .home-slider .slide .image img{
- width: 100%;
+.home .home-slider .slide .image img {
+  width: 100%;
 }
 
-.home .home-slider .slide .content span{
-color: var(--green);
-font-size: 2.5rem;
+.home .home-slider .slide .content span {
+  color: var(--green);
+  font-size: 2.5rem;
 }
 
-.home .home-slider .slide .content h3{
-    color: var(--black);
-    font-size: 7rem;
+.home .home-slider .slide .content h3 {
+  color: var(--black);
+  font-size: 7rem;
 }
 
-.home .home-slider .slide .content p{
-    color: var(--light-color);
-    font-size: 2.2rem;
-    padding: .5rem;
-    line-height: 1.5;
-
+.home .home-slider .slide .content p {
+  color: var(--light-color);
+  font-size: 2.2rem;
+  padding: 0.5rem;
+  line-height: 1.5;
 }
 
+.swiper-pagination-bullet-active {
+  background: var(--green);
+}
 
+/*HOME fin*/
+
+/*dishes inicio*/
+.dishes .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+  gap: 1.5rem;
+}
+
+.dishes .box-container .box {
+  padding: 1rem;
+  background: #fff;
+  border-radius: .5rem;
+  border: .1rem solid rgba(0, 0, 0, 0.2);
+  box-shadow: var(--box-shadow);
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.dishes .box-container .box img{
+  width: 100%;
+}
+.dishes .box-container .box h3{
+  color: var(--black);
+  font-size: 2.5rem;
+}
+
+.dishes .box-container .box .stars{
+  padding: 1rem 0;
+}
+
+.dishes .box-container .box .stars i{
+  font-size: 1.7rem;
+  color: var(--green);
+}
+
+.dishes .box-container .box span{
+ color: var(--green);
+ font-weight: bolder;
+ margin-right: 1rem; 
+  font-size: 2.5rem;
+}
+
+/*dishes fin*/
 
 
 
@@ -231,6 +292,13 @@ font-size: 2.5rem;
 
   header {
     padding: 1rem 2rem;
+  }
+  section {
+    padding: 2rem;
+  }
+  .dishes .box-container .box img{
+    height: auto;
+    width: 100%;
   }
 }
 
@@ -267,5 +335,7 @@ font-size: 2.5rem;
     width: 90%;
     margin: 0 1rem;
   }
-
+  .home .home-slider .slide .content h3 {
+    font-size: 5rem;
+  }
 }
