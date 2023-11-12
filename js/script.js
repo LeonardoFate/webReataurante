@@ -37,3 +37,30 @@ document.querySelector('#close').onclick = () =>{
     },
   loop:true,
   });
+  var swiper = new Swiper(".review-slider", {
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  loop:true,
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    640:{
+      slidesPerView: 2,
+    },
+    1768:{
+      slidesPerView: 2,
+    },
+    1024:{
+      slidesPerView: 3,
+    },
+  }
+  });
