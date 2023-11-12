@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="/css/styles.css">
 </head>
 
-<body>
+<body class="hidden">
     <header>
         <a href="#" class="logo"> <i class="fa-solid fa-utensils">Rukito.</i>
 
@@ -22,7 +22,6 @@
                 <a href="#about">sobre nosotros</a>
                 <a href="#menu">menu</a>
                 <a href="#review">review</a>
-                <a href="#order">ordenar</a>
             </nav>
 
             <div class="icons">
@@ -478,7 +477,9 @@
     </section>
     <!-- footer FIN -->
 
-
+<div class="loader-container" id="onload">
+    <img src="assets/gif-loader/loader2.gif" alt="">
+</div>
 
 
 
@@ -498,8 +499,11 @@
 
     <!--KIT AWESOME-->
     <script src="https://kit.fontawesome.com/c47c09098f.js" crossorigin="anonymous"></script>
+    <!--jquery-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <!--CUSTOM FILE JS-->
     <script src="/js/script.js"></script>
+
 </body>
 
 </html>

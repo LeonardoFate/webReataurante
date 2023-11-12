@@ -20,7 +20,6 @@
 
 html {
   font-size: 62.5%;
-  overflow-x: hidden;
   scroll-padding-top: 5.5rem;
   scroll-behavior: smooth;
 }
@@ -63,6 +62,10 @@ section:nth-child(even) {
   background: #eee;
   letter-spacing: 0.1rem;
 }
+.hidden{
+  overflow: hidden;
+}
+
 
 /*HEADER INICIO*/
 header {
@@ -401,6 +404,11 @@ object-fit: cover;
 /*MENU FIN*/
 
 /*review INicio*/
+.review{
+  padding-top: 20rem;
+  padding-bottom: 20rem;
+}
+
 .review .slide{
   padding: 2rem;
   box-shadow: var(--box-shadow);
@@ -494,9 +502,27 @@ text-decoration: underline;
 /*footer fin*/
 
 
+.loader-container{
+  position: fixed;
+  top: 0; left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10000;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
 
+.loader-container img{
+  width: 35rem;
+}
 
-
+.loader-container.fade-out{
+  top: 110%;
+  opacity: 0;
+}
 
 /*MEDIA QUERIES INICIO*/
 
